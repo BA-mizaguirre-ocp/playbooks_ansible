@@ -13,6 +13,6 @@
         snapshot_name: "{{ snapshot_name }}"
         description: "Snapshot creado por Ansible"
         state: present
-        memory: no  # Cambia a 'yes' si quieres incluir la memoria en el snapshot
+        memory_dump: no  # Cambia a 'yes' si quieres incluir la memoria en el snapshot
         quiesce: yes  # Asegura la consistencia del sistema de archivos antes del snapshot
       delegate_to: localhost
