@@ -1,6 +1,7 @@
 ---
 - name: Crear (o recrear) un snapshot de una máquina virtual en VMware vSphere
   hosts: localhost
+  connection: local
   gather_facts: no
   tasks:
     - name: Crear un snapshot de la máquina virtual
